@@ -31,6 +31,7 @@ func addedValue(lines: [AuditLine]) -> Int {
 
 func multipliedValue(lines: [AuditLine]) -> Int {
   guard lines.count > 0 else { return 0 }
+  
   var value = lines[0].intValue
   for i in 1..<lines.count {
     value *= lines[i].intValue
